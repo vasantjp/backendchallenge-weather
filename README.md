@@ -24,14 +24,6 @@ For further reference, please consider the following sections:
 ### Testing using CRUL
     curl -X GET --header 'Accept: application/json' 'http://localhost:8090/weather/api/v1/current?location=Berlin'
     response: 
-             {
-  "data": {
-    "umbrella": false,
-    "temp": 285.39,
-    "pressure": 1024
-  },
-  "message": "SUCCESS",
-  "status": 200
-}
+             {"data": { "umbrella": false,"temp": 285.39,"pressure": 1024}, "message": "SUCCESS", "status": 200}
 
 
