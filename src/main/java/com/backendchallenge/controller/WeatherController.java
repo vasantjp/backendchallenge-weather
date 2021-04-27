@@ -33,7 +33,6 @@ public class WeatherController {
 	 */
 	@GetMapping("/api/v1/current")
 	@ApiOperation(value = "API to get current weather")
-	@ApiParam(value="Use GET...", name="schoolId")
 	public ResponseEntity<WsResponse> GetCurrentWeather(@RequestParam(name = "location") String location)
 			throws WeatherChallengeException {
 		final WsResponse response = weatherHandler.GetCurrentWeatherData(Optional.of(location));
